@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+​
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #skew {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            transform: skewY(-12deg);
+            transform-origin: 0;
+            background: linear-gradient(150deg, #53f 15%, #05d5ff 70%, #a6ffcb 94%);
+        }
+
+        #skew span {
+            height: 150px;
+            float: left;
+            opacity: .1;
+            transition: .8s;
+        }
+
+        #skew span:hover {
+            opacity: .3;
+            transition: .8s;
+        }
+
+        #skew :nth-child(1) {
+            background: #a1ffc8;
+            width: 10%;
+        }
+
+        #skew :nth-child(2) {
+            background: #0dcfff;
+            width: 90%;
+        }
+
+        #skew :nth-child(3) {
+            background: #53f;
+            width: 20%;
+        }
+
+        #skew :nth-child(4) {
+            background: #a1ffc8;
+            width: 80%;
+        }
+
+        #skew :nth-child(5) {
+            background: #0dcfff;
+            width: 30%;
+        }
+
+        #skew :nth-child(6) {
+            background: #a1ffc8;
+            width: 70%;
+        }
+    </style>
+</head>
+​
+<body>
+<div id="skew">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+</body>
+​
+</html>
